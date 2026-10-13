@@ -1,0 +1,59 @@
+# NAME: Meta AI - Muse / Muse Code / Meta Model API
+# UPDATED: 2026-10-13
+# FORMAT: Quantumult X
+# POLICY: MetaAI (or select force-policy when importing)
+# Covers local client traffic; arbitrary connected sites and cloud-VM egress are outside this list.
+# Evidence: Meta official docs and signed Muse 3.0 app (com.meta.endo, V9WTTPBFK9).
+# Sources: https://dev.meta.ai/docs/overview
+# Sources: https://api.meta.ai/muse-launcher.sh
+# Sources: https://api.meta.ai/muse-code/channels/muse-stable
+# Sources: https://ai.meta.com/muse/
+# Native evidence: Contents/MacOS/Muse and Contents/Resources/hatch/index.html
+# Static/legacy/helper entries are coverage references, not a claim that every host is contacted each session.
+
+# Muse, Meta AI, Muse Code and Meta Model API
+host-suffix, muse.ai, MetaAI
+host-suffix, meta.ai, MetaAI
+host-suffix, metaaivm.com, MetaAI
+host-suffix, metaaiusercontent.com, MetaAI
+
+# Muse native production aliases and legacy shared content
+host, production.museai.com, MetaAI
+host, hatch.ecto1.ai, MetaAI
+host, hatch.club, MetaAI
+host-suffix, s.ecto1usercontent.com, MetaAI
+host-suffix, cf.ecto1usercontent.com, MetaAI
+
+# AI documentation and legacy Llama entry points
+host-suffix, ai.meta.com, MetaAI
+host-suffix, llama.com, MetaAI
+host, llama.meta.com, MetaAI
+host, developer.meta.com, MetaAI
+
+# Shared Meta identity and Graph services; these exact hosts also serve other Meta apps
+host, auth.meta.com, MetaAI
+host, accounts.meta.com, MetaAI
+host, accountscenter.meta.com, MetaAI
+host, meta.graph.meta.com, MetaAI
+host, graph.meta.com, MetaAI
+host, www.facebook.com, MetaAI
+host, m.facebook.com, MetaAI
+host, accountscenter.facebook.com, MetaAI
+host, graph.facebook.com, MetaAI
+host, secure.facebook.com, MetaAI
+host, connect.facebook.net, MetaAI
+
+# Muse desktop and Muse Code distribution / legacy API
+host, lookaside.facebook.com, MetaAI
+host, shortwave.facebook.com, MetaAI
+
+# Shared Meta media and attachment CDN; also routes Facebook/Instagram media on these domains
+host-suffix, fbcdn.net, MetaAI
+host-suffix, fbsbx.com, MetaAI
+
+# Feature-dependent production transport helpers referenced by the signed native client
+host, doh.facebook-dns.com, MetaAI
+host, meta-ohttp-config-prod.fastly-edge.com, MetaAI
+host, meta-ohttp-relay-prod.fastly-edge.com, MetaAI
+host, meta.privacy-gateway.cloudflare.com, MetaAI
+host, meta.hpke-keys.privacy-gateway.cloudflare.com, MetaAI
